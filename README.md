@@ -1,4 +1,4 @@
-#PyCity Schools Analysis
+# PyCity Schools Analysis
 
 * Trend 1: Students are doing better in Reading as compared to Math as the passing percentage in Reading is better as compared to the math passing percentage
 * Trend 2: Budget per student is not a matter of concern in either type of schools, Per student budget in either Charter or District school is almost similar.
@@ -29,7 +29,8 @@ students_df = students_df.rename(columns={"name":"Student Name", "school":"Schoo
 schools_students_df = pd.merge(schools_df,students_df,on="School Name",how="right")
 ```
 
-#District Summary
+# District Summary
+
 ```python
 #Extracting only District Schools from the data frame
 district_schools_df=schools_students_df.loc[schools_students_df['School Type'] == "District"]
@@ -119,7 +120,7 @@ summary_df.head()
 
 
 
-#School Summary
+# School Summary
 ```python
 #applying a condition where math score is greater then 70 (passing score=70) 
 #creating a new column to track students who passed in math by assinging values (1 to pass :0 to fail)
@@ -376,7 +377,7 @@ school_summary_result
 </div>
 
 
-#Top Performing Schools (By Passing Rate)
+# Top Performing Schools (By Passing Rate)
 
 ```python
 #### Top Performing Schools (By Passing Rate)###
@@ -494,7 +495,7 @@ top
 </div>
 
 
-#Bottom Performing Schools (By Passing Rate)
+# Bottom Performing Schools (By Passing Rate)
 
 ```python
 #### Bottom Performing Schools (By Passing Rate)###
@@ -612,7 +613,7 @@ bottom
 </div>
 
 
-#Math Scores by Grade
+# Math Scores by Grade
 
 ```python
 ###### Math Scores by Grade #######
@@ -771,7 +772,7 @@ name_df.unstack()
 </div>
 
 
-#Reading Score by Grade
+# Reading Score by Grade
 
 ```python
 #####Reading Score by Grade#####
@@ -932,7 +933,7 @@ name_reading.unstack()
 </div>
 
 
-#Scores by School Spending
+# Scores by School Spending
 
 ```python
 #######################  Scores by School Spending   #########################
@@ -1035,7 +1036,7 @@ studentbudget_summary_df
 </div>
 
 
-#Scores by School Size
+# Scores by School Size
 
 ```python
 #######################  Scores by School Size   #########################
@@ -1130,7 +1131,7 @@ school_size_summary_df
 </div>
 
 
-#Scores by School Type
+# Scores by School Type
 
 ```python
 #####  Scores by School Type ######
